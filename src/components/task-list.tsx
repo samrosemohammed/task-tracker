@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { taskApi, type Task, type TaskStatus } from "../lib/task-api";
+import { type Task, type TaskStatus } from "../lib/task-api";
 import {
   ArrowUpDown,
   CheckCircle2,

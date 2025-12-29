@@ -1,5 +1,5 @@
 import { Loader2, X } from "lucide-react";
-import { taskApi, type Task } from "../lib/task-api";
+import { type Task } from "../lib/task-api";
 import { useForm } from "react-hook-form";
 import { useEffect, useState } from "react";
 import { formatDate } from "date-fns";
