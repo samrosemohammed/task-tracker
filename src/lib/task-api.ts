@@ -1,9 +1,9 @@
-export type TaskStatus = "Todo" | "In Progress" | "Complete";
+export type TaskStatus = "Todo" | "Done" | "Pending";
 
 export interface Task {
   id: string;
   title: string;
-  dueData: string;
+  dueDate: Date;
   status: TaskStatus;
 }
 
@@ -13,20 +13,44 @@ const initialTask: Task[] = [
   {
     id: "1",
     title: "Test 1",
-    dueData: "2025-01-15",
-    status: "In Progress",
+    dueDate: new Date(),
+    status: "Todo",
   },
   {
     id: "2",
     title: "Test 2",
-    dueData: "2025-01-15",
+    dueDate: new Date(),
     status: "Todo",
   },
   {
     id: "3",
     title: "Test 3",
-    dueData: "2025-01-15",
-    status: "Complete",
+    dueDate: new Date(),
+    status: "Done",
+  },
+  {
+    id: "4",
+    title: "Test 3",
+    dueDate: new Date(),
+    status: "Done",
+  },
+  {
+    id: "5",
+    title: "Test 3",
+    dueDate: new Date(),
+    status: "Done",
+  },
+  {
+    id: "6",
+    title: "Test 3",
+    dueDate: new Date(),
+    status: "Done",
+  },
+  {
+    id: "7",
+    title: "Test 3",
+    dueDate: new Date(),
+    status: "Done",
   },
 ];
 

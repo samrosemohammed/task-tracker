@@ -1,14 +1,17 @@
 import { Header } from "./components/header";
 import { TaskList } from "./components/task-list";
+import { TaskProvider } from "./context/task-context-provider";
 import { MaxWidthWrapper } from "./wrapper/max-width-wrapper";
 
 function App() {
   return (
     <>
-      <MaxWidthWrapper>
-        <Header />
-        <TaskList />
-      </MaxWidthWrapper>
+      <TaskProvider>
+        <MaxWidthWrapper className="min-h-screen">
+          <Header />
+          <TaskList />
+        </MaxWidthWrapper>
+      </TaskProvider>
     </>
   );
 }
